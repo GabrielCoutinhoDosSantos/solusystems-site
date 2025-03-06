@@ -1,0 +1,336 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0; /* Cinza claro */
+    color: #333; /* Cinza escuro */
+    text-align: center;
+    padding-top: 60px; /* Compensa o header fixo */
+}
+
+header {
+    background-color: #333; /* Cinza chumbo */
+    color: #f0f0f0; /* Branco gelo */
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3.8em;
+    color: #f0f0f0; /* Branco gelo */
+    margin-left: 40px;
+    font-family: Gabriola;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0; /* Branco gelo */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Azul bebê */
+}
+
+/* Nova div à esquerda */
+.header-left {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    background: #f0f0f0; /* Branco gelo */
+    margin-top: 60px;
+    /* border: darkorange 2px solid; */
+}
+
+ hr {
+    border: none;
+    border-top: 2px solid #00bcd4; /* Cor amarela */
+    margin: 20px 0;
+}
+
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333; /* Cinza chumbo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #00bcd4; /* Azul bebê */
+}
+
+#sobre{
+    background-color: #e0e0e0; /* Cinza claro */
+    padding-left: 150px; padding-right: 150px;
+}
+
+.contentt {
+    padding: 50px 20px;
+}
+
+.contentt h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333; /* Cinza chumbo */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #00bcd4; /* Azul bebê */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #f0f0f0;
+}
+
+.social {
+    margin: 10px 0;
+}
+
+.social-btn {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 15px;
+    background-color: #444; /* Cinza escuro */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #00bcd4; /* Azul bebê */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+}
+
+.servicos-section {
+    color: white;
+    background-color: #a3a3a3; /* Um tom de cinza para diferenciar */
+    padding: 50px 20px;
+    list-style-type: none; /* Removendo as bolinhas */
+}
+
+.servicos-section ul {
+    padding-left: 0; /* Removendo o espaçamento da esquerda */
+    list-style-type: none; /* Removendo as bolinhas */
+}
+
+.servicos-section li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/*Formulário*/
+
+form {
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #333; /* Cinza escuro */
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Fundo cinza claro */
+    margin-top: 5px;
+}
+
+input:focus, textarea:focus {
+    border-color: #00bcd4; /* Azul bebê */
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #333; /* Cinza chumbo */
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+button[type="submit"]:hover {
+    background-color: #00bcd4; /* Azul bebê */
+}
+
+#contato{
+    color: white;
+    background-image: url("imgForm.jpeg");
+}
+
+/*politica*/
+
+/* Estilização da Cabeçalho */
+#cabeca {
+    background-color: #333; /* Cinza chumbo */
+    color: #f0f0f0; /* Branco gelo */
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Estilização do conteúdo principal */
+.content {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.content h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    color: #444;
+    margin-top: 20px;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #f0f0f0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
